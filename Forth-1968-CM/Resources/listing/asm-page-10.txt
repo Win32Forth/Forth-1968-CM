@@ -1,0 +1,60 @@
+PAGE 6
+0A6F 0  091D     ARETR  DC   RETRV
+0A70 0  0000     COM    DC   END INTERPRET
+0A71 00 74FD0B06        MDM  L R,-3
+0A73 00 67800B06        LDX  I3 R
+0A75 0  C301            LD   3 1
+0A76 0  D1FD            STO  1 -3  C
+0A77 0  C302            LD   3 2
+0A78 0  D1FE            STO  1 -2  ACCEPT
+0A79 0  C300            LD   3
+0A7A 00 94000AD8        S    L E
+0A7C 00 4C880A70        BNP  I COM
+0A7E 0  C300            LD   3 0
+0A7F 00 D4000AD8        STO  L E
+0A81 00 4C800A70        B    I COM
+0A83 0  0000     LOC    DC   LOCATION OF CODE
+0A84 00 44000922        BSI  L NEXT
+0A86 00 44000993        BSI  L DO
+0A88 0  C302            LD   3 2
+0A89 0  7201            MDX  2 1
+0A8A 0  D200            STO  2
+0A8B 00 4C800A83        B    I LOC
+0A8D 0  0000     OR     DC   OR TOP OF STACK
+0A8E 0  C200            LD   2
+0A8F 0  72FF            MDX  2 -1
+0A90 0  EA00            OR   2
+0A91 0  D200            STO  2
+0A92 00 4C800A8D        B    I OR
+0A94 0  0000     STORE  DC   STORE TO T.O.S
+0A95 0  C2FF            LD   2 -1
+0A96 00 D6800000        STO  I2
+0A98 0  72FE            MDX  2 -2
+0A99 00 4C800A94        B    I STORE
+0A9B 0  0000     SD     DC   STACK TO DEPOSIT
+0A9C 0  C200            LD   2
+0A9D 00 74010D83        MDM  L IC,1
+0A9F 00 D4800D83        STO  I IC
+0AA1 0  72FF            MDX  2 -1
+0AA2 00 4C800A9B        B    I SD
+0AA4 0  0AA5     ADDR   DC   *
+0AA5 0  0000            DC   PLACE ADDRESS ON STACK
+0AA6 0  7201            MDX  2 1
+0AA7 00 6F00096D        STX  L3 TEMP
+0AA9 00 7403096D        MDM  L TEMP,3
+0AAB 00 C400096D        LD   L TEMP
+0AAD 0  D200            STO  2
+0AAE 00 4C800AA5        B    I ADDR+1
+0AB0 0  0AB1     LITER  DC   *
+0AB1 0  0000            DC   PLACE VALUE ON STACK
+0AB2 0  7201            MDX  2 1
+0AB3 0  C303            LD   3 3
+0AB4 0  D200            STO  2
+0AB5 00 4C800AB1        B    I LITER+1
+0AB7 0  0000     OPER   DC   OPERATION
+0AB8 00 440009C1        BSI  L ENTRY
+0ABA 00 74010D83        MDM  L IC,1
+0ABC 00 C4000D83        LD   L IC
+0ABE 0  7201            MDX  2 1
+0ABF 0  D200            STO  2
+0AC0 0  D302            STO  3 2

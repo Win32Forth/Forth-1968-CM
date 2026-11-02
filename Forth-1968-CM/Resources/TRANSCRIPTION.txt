@@ -1,0 +1,59 @@
+FORTH, 1968, Charles H. Moore. IBM 1130.
+Transcribed from the scan in FORTH-1968-CM.pdf (16 pages).
+
+What the pages are
+  PDF page 1        Assembler listing, page 1. Red ink across the top reads
+                    FORTH  ORIGINAL  1130.
+  PDF pages 2-5     Disk dump of the Forth program. The dump title is FO.FO.
+  PDF pages 6-16    Assembler listing, pages 2-12. The assembly ends with
+                    END START-1 and reports no errors, 099 symbols defined.
+
+Files a later simulator should compile
+  FO.FO        The Forth program. A dot begins a definition and a comma ends
+               one. OPERATION is the code-word introducer (the cent sign in
+               later Forth). Whitespace separates words. A new line is
+               whitespace. The numbers printed down the left of the dump
+               (9, 10, 20, 30, ... 220) are listing sequence numbers and are
+               not in this file.
+  FORTH.asm    The IBM 1130 assembler source of the kernel. Addresses and
+               object code are in listing/ rather than in this file.
+
+Handwriting and clipped lines, and how FO.FO treats them
+  .IN 154 VECTOR, IN 140 IN=
+      140 is what the printer produced. Under it, in ink, is 141 with a
+      check mark. FO.FO keeps the printed 140.
+  .CREATE 2E0 SECTOR ... RAISE SV 6+= ...
+      2E0 SECTOR and SV 6+= are underlined in ink. The words are unchanged.
+  A circle is drawn in the right margin beside .EXAMINE / .EMPLACE.
+  OPERATION SWAP ... FF SS RE
+      The paper ends after RE. Every other OPERATION line ends in RETURN,
+      and the next printed line ends in RETURN, so FO.FO completes the word.
+  .SSI ST X2
+      The paper ends after X2. The twin on the same line is
+      .LSI LD X2 I, so FO.FO completes this one as .SSI ST X2 I,
+  OPERATION BLANK ... 9 TR ...
+      The printed digit is 9, not 0. The 0 on the next line (0 TA) is a
+      different glyph.
+  OPERATION RIBBON ... LOC TYP CALL
+      The printed word is TYP, the same word defined by OPERATION TYP.
+
+Assembler notes
+  // JOB operand is 3333. The LOG DRIVE / CART SPEC table under it is
+  monitor output and is kept in the listing, not in FORTH.asm.
+  The comment on CONVE reads CONVERT EBCDIC TO FORTH.
+  The core-fetch label is RETRV. ARETR's operand is the same word.
+  The 0985 comment is EVEN CHARACTER.
+  Code 94 in the character table is commented SEMI COLON. The dictionary
+  comment on /3024 is SEMICOLON. The table also prints 107 , /34,
+  75 . 3D, and 127 QUOTE /3E.
+  The comment on COM reads END INTERPRET.
+  The comment on STORE reads STORE TO T.O.S
+  START loads the sector with LDX L3 /10EE. The object word is 670010EE.
+  LINK BALO is printed at 0A2D with object 02053580. The next
+  instruction, FORTH, is at 0A31.
+  The comment on C3 is printed VHARACTER BEYOND SECTOR.
+  The comment on RECOR is NEXT RECORD.
+  The monitor card after the assembly is *STORECI1 WS UA FORTX, followed by
+  the LIBF transfer vector (PRNT1, DISK1, ILS04).
+  listing/asm-page-NN.txt is the assembler listing with addresses and
+  object code. NN is the PDF page. PDF pages 2-5 have no assembler listing.

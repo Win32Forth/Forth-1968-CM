@@ -1,0 +1,53 @@
+PAGE 11
+0D69 0  2424            DC   /2424
+0D6A 0  0A8D            DC   OR
+0D6B 0  0000            DC
+0D6C 0  3D24            DC   /3D24   =
+0D6D 0  2424            DC   /2424
+0D6E 0  0A94            DC   STORE
+0D6F 0  0000            DC
+0D70 0  3924            DC   /3924   COLON
+0D71 0  2424            DC   /2424
+0D72 0  09D2            DC   ENTER
+0D73 0  0000            DC
+0D74 0  3A24            DC   /3A24   .
+0D75 0  2424            DC   /2424
+0D76 0  09D2            DC   ENTER
+0D77 0  0000            DC
+0D78 0  3024            DC   /3024   SEMICOLON
+0D79 0  2424            DC   /2424
+0D7A 0  0A70            DC   COM
+0D7B 0  0000            DC
+0D7C 0  3424            DC   /3424   ,
+0D7D 0  2424            DC   /2424
+0D7E 0  0A70            DC   COM
+0D7F 0  0000            DC
+0D80 0  120C            DC   /120C   IC
+0D81 0  2424            DC   /2424
+0D82 0  0AA5            DC   ADDR+1
+0D83 0  0000     IC     DC
+0D84 0  2524            DC   /2524   CENT
+0D85 0  2424            DC   /2424
+0D86 0  0AB7            DC   OPER
+0D87 0  0000            DC
+0D88 0  1819            DC   /1819   OPERATION
+0D89 0  0E1B            DC   /0E1B
+0D8A 0  0AB7            DC   OPER
+0D8B 0  0000            DC
+0D8C 0  0E17            DC   /0E17   ENTRY
+0D8D 0  1D1B            DC   /1D1B
+0D8E 0  09C1            DC   ENTRY
+0D8F 0  0000            DC
+0D90 0  1217            DC   /1217   INTEGER
+0D91 0  1D0E            DC   /1D0E
+0D92 0  0ACF            DC   INTEG
+0D93 0  0000            DC
+0D94 0  1217            DC   /1217   INC
+0D95 0  0C24            DC   /0C24
+0D96 0  0A4B            DC   INC
+0D97 0  0000            DC
+0D98 0  1C0D            DC   /1C0D   SD
+0D99 0  2424            DC   /2424
+0D9A 0  0A9B            DC   SD
+0D9B 0  0000            DC
+0D9C 0  0C18            DC   /0C18   CONVERT

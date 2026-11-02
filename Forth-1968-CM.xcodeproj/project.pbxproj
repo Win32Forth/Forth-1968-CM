@@ -1,0 +1,209 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1680000000000000000000A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16800000000000000000007 /* main.swift */; };
+		F1680000000000000000000B /* Resources in Copy Files */ = {isa = PBXBuildFile; fileRef = F16800000000000000000008 /* Resources */; };
+		F16800000000000000000014 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16800000000000000000013 /* Assembler.swift */; };
+		F16800000000000000000016 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16800000000000000000015 /* Machine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F16800000000000000000004 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				F1680000000000000000000B /* Resources in Copy Files */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F16800000000000000000007 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F16800000000000000000013 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		F16800000000000000000015 /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		F16800000000000000000008 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		F16800000000000000000009 /* Forth-1968-CM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Forth-1968-CM"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F16800000000000000000005 = {
+			isa = PBXGroup;
+			children = (
+				F16800000000000000000006 /* Forth-1968-CM */,
+				F16800000000000000000012 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F16800000000000000000006 /* Forth-1968-CM */ = {
+			isa = PBXGroup;
+			children = (
+				F16800000000000000000007 /* main.swift */,
+				F16800000000000000000013 /* Assembler.swift */,
+				F16800000000000000000015 /* Machine.swift */,
+				F16800000000000000000008 /* Resources */,
+			);
+			path = "Forth-1968-CM";
+			sourceTree = "<group>";
+		};
+		F16800000000000000000012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F16800000000000000000009 /* Forth-1968-CM */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F16800000000000000000002 /* Forth-1968-CM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16800000000000000000011 /* Build configuration list for PBXNativeTarget "Forth-1968-CM" */;
+			buildPhases = (
+				F16800000000000000000003 /* Sources */,
+				F16800000000000000000004 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Forth-1968-CM";
+			productName = "Forth-1968-CM";
+			productReference = F16800000000000000000009 /* Forth-1968-CM */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F16800000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = F16800000000000000000010 /* Build configuration list for PBXProject "Forth-1968-CM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F16800000000000000000005;
+			productRefGroup = F16800000000000000000012 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F16800000000000000000002 /* Forth-1968-CM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F16800000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1680000000000000000000A /* main.swift in Sources */,
+				F16800000000000000000014 /* Assembler.swift in Sources */,
+				F16800000000000000000016 /* Machine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F1680000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1680000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1680000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		F1680000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F16800000000000000000010 /* Build configuration list for PBXProject "Forth-1968-CM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1680000000000000000000C /* Debug */,
+				F1680000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16800000000000000000011 /* Build configuration list for PBXNativeTarget "Forth-1968-CM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1680000000000000000000E /* Debug */,
+				F1680000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F16800000000000000000001 /* Project object */;
+}

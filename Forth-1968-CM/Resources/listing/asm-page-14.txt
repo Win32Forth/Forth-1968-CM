@@ -1,0 +1,59 @@
+PAGE 10
+0BF0 0  007B            DC   123   NUMBER
+0BF1 0  004C            DC   76   LESS THAN
+0BF2 0  004D            DC   77   (
+0BF3 0  004E            DC   78   +
+0BF4 0  004F            DC   79   STROKE
+0BF5 0  0050            DC   80   AMPERSAND   /2B
+0BF6 0  005A            DC   90   EXCLAME
+0BF7 0  005B            DC   91   $
+0BF8 0  005C            DC   92   *
+0BF9 0  005D            DC   93   )
+0BFA 0  005E            DC   94   SEMI COLON
+0BFB 0  005F            DC   95   NOT
+0BFC 0  0060            DC   96   -
+0BFD 0  0061            DC   97   /
+0BFE 0  006B            DC   107   ,   /34
+0BFF 0  006C            DC   108   PERCENT
+0C00 0  006D            DC   109   UNDERSCORE
+0C01 0  006E            DC   110   GREATER THAN
+0C02 0  006F            DC   111   QUESTION
+0C03 0  007A            DC   122   COLON
+0C04 0  004B            DC   75   .   3D
+0C05 0  007C            DC   124   AT
+0C06 0  007D            DC   125   '
+0C07 0  007E            DC   126   =
+0C08 0  007F            DC   127   QUOTE   /3E
+0C09 0  0040     BCDBL  DC   64   BL
+0C0A 0  0140     BUF    DC   320   SECTOR BUFFER
+0C0B 0  0000     SECT   DC
+0C0C    0140            BSS  320
+0D4C 0  0000            DC
+0D4D 0  0000            DC
+0D4E 0  09A3            DC   UNDEF
+0D4F 0  0000            DC
+0D50 0  0F18            DC   /0F18   FORTH
+0D51 0  1B1D            DC   /1B1D
+0D52 0  0A31            DC   FORTH
+0D53 0  0000            DC
+0D54 0  1B0E            DC   /1B0E   RECURSE
+0D55 0  0C1E            DC   /0C1E
+0D56 0  0AB1            DC   LITER+1
+0D57 0  0B06            DC   R
+0D58 0  0F12            DC   /0F12   FIND
+0D59 0  170D            DC   /170D
+0D5A 0  0993            DC   DO
+0D5B 0  0000            DC
+0D5C 0  0A0D            DC   /0A0D   ADDRESS
+0D5D 0  0D1B            DC   /0D1B
+0D5E 0  0AA5            DC   ADDR+1
+0D5F 0  0000            DC
+0D60 0  0E17            DC   /0E17   END
+0D61 0  0D24            DC   /0D24
+0D62 0  0A70            DC   COM
+0D63 0  0000            DC
+0D64 0  110E            DC   /110E   HEX
+0D65 0  2124            DC   /2124
+0D66 0  09AB            DC   HEX
+0D67 0  0000            DC
+0D68 0  181B            DC   /181B   OR

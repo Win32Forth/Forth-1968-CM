@@ -1,0 +1,53 @@
+PAGE 9
+0B98 0  0BA5            DC   PRN
+0B99 0  0B2A            DC   ERROR
+0B9A 20 176558F1 PR1    LIBF PRNT1
+0B9B 0  0000            DC   /0000
+0B9C 0  70FD            B    PR1
+0B9D 0  C004            LD   DP0
+0B9E 0  D004            STO  DP
+0B9F 00 4C800B85        B    I PRINT
+0BA1 0  0000     AP     DC
+0BA2 0  174C     DP0    DC   2*PRN+2
+0BA3 0  174C     DP     DC   2*PRN+2
+0BA4 0  1794     DP1    DC   2*PRN+74
+0BA5 0  0024     PRN    DC   36
+0BA6    0024            BSS  36
+0BCA 0  00F0     BCD    DC   240  0
+0BCB 0  00F1            DC   241  1
+0BCC 0  00F2            DC   242  2
+0BCD 0  00F3            DC   243  3
+0BCE 0  00F4            DC   244  4
+0BCF 0  00F5            DC   245  5
+0BD0 0  00F6            DC   246  6
+0BD1 0  00F7            DC   247  7
+0BD2 0  00F8            DC   248  8
+0BD3 0  00F9            DC   249  9
+0BD4 0  00C1            DC   193  A
+0BD5 0  00C2            DC   194  B
+0BD6 0  00C3            DC   195  C
+0BD7 0  00C4            DC   196  D
+0BD8 0  00C5            DC   197  E
+0BD9 0  00C6            DC   198  F
+0BDA 0  00C7            DC   199  G
+0BDB 0  00C8            DC   200  H
+0BDC 0  00C9            DC   201  I  /12
+0BDD 0  00D1            DC   209  J
+0BDE 0  00D2            DC   210  K
+0BDF 0  00D3            DC   211  L
+0BE0 0  00D4            DC   212  M
+0BE1 0  00D5            DC   213  N
+0BE2 0  00D6            DC   214  O  /18
+0BE3 0  00D7            DC   215  P
+0BE4 0  00D8            DC   216  Q
+0BE5 0  00D9            DC   217  R
+0BE6 0  00E2            DC   226  S  /1C
+0BE7 0  00E3            DC   227  T
+0BE8 0  00E4            DC   228  U
+0BE9 0  00E5            DC   229  V
+0BEA 0  00E6            DC   230  W
+0BEB 0  00E7            DC   231  X
+0BEC 0  00E8            DC   232  Y
+0BED 0  00E9            DC   233  Z
+0BEE 0  0040            DC   64  BLANK  /24
+0BEF 0  004A            DC   74  CENTS

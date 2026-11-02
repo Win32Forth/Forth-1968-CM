@@ -1,0 +1,55 @@
+PAGE 12
+0D9D 0  171F            DC   /171F
+0D9E 0  0900            DC   CONVE
+0D9F 0  0000            DC
+0DA0 0  0F0E            DC   /0F0E   FETCH
+0DA1 0  1D0C            DC   /1D0C
+0DA2 0  096E            DC   FETCH
+0DA3 0  0000            DC
+0DA4 0  0D0E            DC   /0D0E   DEPOSIT
+0DA5 0  1918            DC   /1918
+0DA6 0  097F            DC   DEPOS
+0DA7 0  0000            DC
+0DA8 0  191E            DC   /191E   PUT
+0DA9 0  1D24            DC   /1D24
+0DAA 0  0B6F            DC   PUT
+0DAB 0  0000            DC
+0DAC 0  191B            DC   /191B   PRINT
+0DAD 0  1217            DC   /1217
+0DAE 0  0B85            DC   PRINT
+0DAF 0  0000            DC
+0DB0 0  170E            DC   /170E   NEXT
+0DB1 0  211D            DC   /211D
+0DB2 0  0922            DC   NEXT
+0DB3 0  0000            DC
+0DB4 0  1518            DC   /1518   LOC
+0DB5 0  0C24            DC   /0C24
+0DB6 0  0A83            DC   LOC
+0DB7 0  0000            DC
+0DB8 0  0E24            DC   /0E24   E
+0DB9 0  2424            DC   /2424
+0DBA 0  0AB1            DC   LITER+1
+0DBB 0  0AD8            DC   E
+0DBC 0  1512            DC   /1512   LIT
+0DBD 0  1D24            DC   /1D24
+0DBE 0  0AB1            DC   LITER+1
+0DBF 0  0000            DC
+0DC0 0  0E01     E2     DC   /0E01   E1
+0DC1 0  2424            DC   /2424
+0DC2 0  0AB1            DC   LITER+1
+0DC3 0  0AD7            DC   E1
+0DC4    09FA            END  START-1
+000 OVERFLOW SECTORS SPECIFIED
+000 OVERFLOW SECTORS REQUIRED
+099 SYMBOLS DEFINED
+NO ERROR(S) FLAGGED IN ABOVE ASSEMBLY
+// DUP
+*DELETE             FORTX
+CART ID 0001   DB ADDR  3700   DB CNT   0060
+*STORECI1   WS  UA  FORTX
+R 41  3090 (HEX) WDS UNUSED BY CORE LOAD
+LIBF TRANSFER VECTOR
+PRNT1  0DC4
+DISK1  00F9
+SYSTEM SUBROUTINES
+ILS04  00C4
